@@ -9,7 +9,7 @@
                 "/EHsc",
                 "/nologo",
                 "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}"
+                "${file}",
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -28,6 +28,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-lws2_32",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
